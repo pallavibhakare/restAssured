@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-21T09:04:32 PDT" name="Default suite" finished-at="2024-05-21T09:04:41 PDT" duration-ms="9096">
+    <groups>
+    </groups>
+    <test started-at="2024-05-21T09:04:32 PDT" name="Default test" finished-at="2024-05-21T09:04:41 PDT" duration-ms="9096">
+      <class name="tests.ApiPortalTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:tests.ApiPortalTest@129b4fe2]" started-at="2024-05-21T09:04:32 PDT" name="initialize" finished-at="2024-05-21T09:04:32 PDT" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="addDataRequestTest_TC02()[pri:0, instance:tests.ApiPortalTest@129b4fe2]" started-at="2024-05-21T09:04:32 PDT" name="addDataRequestTest_TC02" finished-at="2024-05-21T09:04:40 PDT" duration-ms="8087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDataRequestTest_TC02 -->
+        <test-method signature="loginRequestTest_TC01()[pri:0, instance:tests.ApiPortalTest@129b4fe2]" started-at="2024-05-21T09:04:40 PDT" name="loginRequestTest_TC01" finished-at="2024-05-21T09:04:41 PDT" duration-ms="503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginRequestTest_TC01 -->
+      </class> <!-- tests.ApiPortalTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
