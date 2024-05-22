@@ -1,0 +1,22 @@
+{
+	"baseUrl":"https://us-central1-qa01-tekarch-accmanager.cloudfunctions.net",
+	"headers": {
+		"Content-Type": "application/json"
+	},
+	"payloads": {
+		"login": {
+			"username": "pallavibhakare19@tekarch.com",
+			"password": "Admin123"
+		},
+		"addUser": {
+		}
+	},
+	"endpoints": {
+		"login": "/login",
+		"adddata": "/addData",
+		"getdata": "/getdata",
+		"update":"/updateData",
+		"delete": "/deleteData",
+		"logout": ""
+	}
+}

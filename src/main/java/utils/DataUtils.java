@@ -1,17 +1,21 @@
 package utils;
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Properties;
-
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import constants.FileConstants;
+import com.jayway.jsonpath.JsonPath;
 
 public class DataUtils {
+	
+	public static String readJsonFileToString(String path) throws IOException {
+		byte[] data = Files.readAllBytes(Paths.get(path));
+		return new String(data);
 		
-	public static String readLoginTestData(String key) throws IOException {
-		FileInputStream file = new FileInputStream(FileConstants.TESTDATA_FILE_PATH);
-		Properties p = new Properties();		
-		p.load(file);
-		return p.getProperty(key);
 	}
+	public static Object getTestData(String jsonPath) throws IOException{
+		String testData = DataUtils.readJsonFileToString(FileConstants.TEST_DATA_FILE_PATH);
+		return JsonPath.read(testData, jsonPath);
+	}
+
 }

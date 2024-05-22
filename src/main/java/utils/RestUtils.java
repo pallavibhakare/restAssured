@@ -7,7 +7,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class RestUtils {
-	public static Response postReq(HashMap<String, String> headers, String payload, String path) {
+	public static Response postReq(HashMap<String, String> headers, Object payload, String path) {
 		//public static Response postReq(HashMap<String, String> headers, jsonObject payload, String path) {
 		Response loginRes = RestAssured.given().headers(headers).when()
 		.body(payload).post(path)
